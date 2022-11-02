@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: 0-structure.sql
+      relativeToChangelogFile: true
+      labels: poc
