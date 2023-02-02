@@ -60,7 +60,7 @@ public class MainController {
 
 
   @GetMapping("/")
-  private List<FieldMethodDto> getAllowed(@RequestParam(defaultValue = "EUR") String currency, @RequestParam(defaultValue = "MT") String country) {
+  private List<FieldMethodDto> getAllowedConfigurations(@RequestParam(defaultValue = "EUR") String currency, @RequestParam(defaultValue = "MT") String country) {
     return methodFieldsRepository.findAll().stream()
         .map(t -> {
           FieldMethodDto fieldMethodDto = new FieldMethodDto();
