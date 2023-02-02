@@ -1,8 +1,12 @@
 spring:
   datasource:
-    url: jdbc:mysql://10.104.165.74:3306/poc?createDatabaseIfNotExist=true&serverTimezone=UTC
-    username: poc
-    password: poc
+    url: jdbc:mysql://localhost:3306/poc?createDatabaseIfNotExist=true&serverTimezone=UTC
+    username: user
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+
 
 management:
   endpoints:
